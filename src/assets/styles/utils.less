@@ -1,0 +1,71 @@
+@import "mixins";
+
+/*公共组件*/
+.theme-default {
+  // 九宫格
+  .list9-block {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 10px auto;
+        width: 32%;
+        display: inline-block;
+      }
+    }
+    a {
+      display: block;
+      .item-media {
+        text-align: center;
+        img {
+          max-width: 70%;
+          min-width: 70%;
+        }
+      }
+
+      .item-inner {
+        height: 0;
+        .item-title {
+          text-align: center;
+          color: @greyColor;
+        }
+      }
+    }
+  }
+
+  // 搜索栏
+  .navbar-through > .page > .searchbar {
+    top: 54px;
+    height: 54px;
+  }
+
+  // 功能菜单
+  .func-list {
+    margin-top: 0;
+    ul {
+      background-color: #F0F0F0;
+      padding: 5px 0 !important;
+
+      li {
+        background-color: #fff;
+        margin: 10px auto;
+        .item-content {
+          min-height: 60px;
+
+          .item-media img {
+            width: 40px;
+            height: 40px;
+          }
+
+          .item-inner {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+

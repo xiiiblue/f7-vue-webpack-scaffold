@@ -1,0 +1,40 @@
+@import "mixins";
+
+/*导航栏*/
+.theme-default {
+  .navbar {
+    height: 54px;
+    background-color: @mainColor;
+    color: white;
+    .left {
+      font-size: 30px;
+      margin-left: -3px;
+      i.icon-back {
+        background-image: url("@{imgBaseUrl}/backarrow.png");
+        width: 36px;
+        height: 36px;
+      }
+      .back {
+        color: white;
+      }
+    }
+    .center {
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+    .right {
+      i {
+        font-size: 20px;
+        color: white !important;
+      }
+    }
+
+  }
+  .page-content {
+    padding-top: 54px;
+  }
+}
+
+
+
